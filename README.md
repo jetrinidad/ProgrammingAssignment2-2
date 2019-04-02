@@ -1,10 +1,6 @@
 # ProgrammingAssignment2
 Programming assignment, Creating a cache function and returning the cached inverse of a matrix
 
-### Used to validate if our function is accurate
-x<- matrix(1:4,nrow = 2,ncol = 2)
-solve (x)
-
 ## The makeCachematrix function creates a special matrix that does four things
    
    makeCachematrix <- function(x = matrix()) {
@@ -42,6 +38,9 @@ solve (x)
         x$setinverse(m)
         m
   }
+  
+### Used square matrix to validate if our function is accurate
+      x<- matrix(1:4,nrow = 2,ncol = 2)
 
 ### Check if functions work and values are accurate
          solve(x)
